@@ -1,0 +1,9 @@
+# github.com/jmoiron/sqlx v1.2.0
+github.com/jmoiron/sqlx
+github.com/jmoiron/sqlx/reflectx
+# github.com/lib/pq v1.2.0
+github.com/lib/pq
+github.com/lib/pq/oid
+github.com/lib/pq/scram
+# gopkg.in/yaml.v2 v2.2.2
+gopkg.in/yaml.v2
