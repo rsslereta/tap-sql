@@ -6,8 +6,9 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
-	tapsql "tap-sql"
 	"time"
+
+	tapsql "github.com/rsslereta/tap-sql"
 
 	_ "github.com/lib/pq"
 	yaml "gopkg.in/yaml.v2"
@@ -42,6 +43,9 @@ func main() {
 	flag.StringVar(&encType, "encType", "", "Encoding type: CSV, JSON, JSONLD ")
 	flag.Parse()
 	if len(confPath) == 0 {
+		log.Fatalln("configuration file required")
+	}
+	if len(statePath) == 0 {
 		log.Fatalln("configuration file required")
 	}
 
